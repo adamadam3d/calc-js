@@ -11,12 +11,18 @@ const sign = document.createElement('span');
 const multp = document.querySelector('.multp');
 const divide = document.querySelector('.divide')
 let total = 0;
+let number2 =parseFloat(screen2.textContent)
+
+
 function test() {
     screen1.textContent+=this.textContent
 }
 
 btns.forEach(btn=> btn.addEventListener('click',test));
-sub.addEventListener('click',operation);
+
+
+sub.addEventListener('click', operation);
+
 add.addEventListener('click',operation);
 multp.addEventListener('click',operation);
 divide.addEventListener('click',operation);
@@ -28,7 +34,7 @@ equal.addEventListener('click',()=>{
             total =number1 + number2;
             break;
         case '-':
-            total = number1 - number2;
+            total = number2 - number1;
             break;
         case '*':
             total = number1 * number2;
@@ -53,7 +59,7 @@ function operation(){
             total =number1 + number2;
             break;
         case '-':
-            total = number1 - number2;
+            total = number2 - number1;
             break;
         case '*':
             total = number1 * number2;
@@ -96,9 +102,11 @@ clear.addEventListener('click',()=>{
 back.addEventListener('click',()=>{
     screen1.textContent = screen1.textContent.slice(0,-1);
 });
+
 equal.removeEventListener('click',test);
 back.removeEventListener('click',test);
 add.removeEventListener('click',test);
 sub.removeEventListener('click',test);
 multp.removeEventListener('click',test);
 divide.removeEventListener('click',test);
+
