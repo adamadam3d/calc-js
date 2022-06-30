@@ -1,0 +1,120 @@
+*{
+    margin: 0;padding: 0;border: 0;box-sizing: border-box; border-radius: 8px;
+    font-family: sans-serif;
+    color: aliceblue;
+
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    background-color: #333333;
+
+    
+}
+
+.container{
+    display: flex;
+    border: 5px solid #6f6f72;
+    align-self: center;
+    
+
+    background-color: #1e1e1e;
+    height: 550px;
+    width: 350px;
+    flex-direction: column;
+   
+    
+}
+.screen{
+    border: 9px solid #6f6f72;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgba(rgba(255, 0, 0, 0), green, blue, alpha);
+    height: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+h1{
+    font: 2em sans-serif;
+}
+.value1{
+    align-self: flex-end;
+    
+}
+.value2{
+    font: 2em sans-serif;
+    color: grey;
+    height: 50px;
+}
+span{
+    color: grey;
+}
+
+button{
+    
+    height: 60px;
+    width: 60px;
+    border: none;
+    color: black;
+    padding: 15px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20pt;
+    
+    
+}
+.touchpad{
+    border: 9px solid #6f6f72;
+    background-color: transparent;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    height: 100%;
+}
+.row{
+    height: 20%;
+    display: flex;
+ 
+
+
+}
+#clear{
+    margin: 7px;
+    border: 5px solid #6f6f72;
+    text-align: center;
+    width:45%;
+    font-size: 24pt;
+}
+.button{
+    margin: 7px;
+    width: 58px;
+    border: 5px solid #6f6f72;
+    text-align: center;
+    font-size: 24pt;
+    height: 58px;
+    user-select: none; 
+    
+
+}
+#no0{
+    margin: 7px;
+    border: 5px solid #6f6f72;
+    text-align: center;
+    width:45%;
+    font-size: 24pt;
+}
+.button:hover{
+    background-color: aqua;
+}
+.button:active{
+    background-color:red;
+}
