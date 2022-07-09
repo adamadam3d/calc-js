@@ -45,7 +45,8 @@ equal.addEventListener('click',()=>{
 
     }
     total = Math.floor(total * 10) / 10
-    alert(total);
+    screen2.innerHTML = '';
+    screen1.textContent = total ;
 
 
 });
